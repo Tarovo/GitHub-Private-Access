@@ -8,6 +8,10 @@
 #!input = github_token
 #!date = 2023-11-12 22:00:00
 
+[Rule]
+DOMAIN, raw.githubusercontent.com, PROXY
+DOMAIN, gist.githubusercontent.com, PROXY
+
 [Script]
 http-request ^https?:\/\/(raw|gist)\.githubusercontent.com script-path=https://raw.githubusercontent.com/Tarovo/GitHub-Private-Access/main/github_private_repo.js
 
