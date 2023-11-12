@@ -1,8 +1,8 @@
 #!name = GitHub Private Access
 #!desc = 允许访问 GitHub 私有仓库
-#!openUrl = https://github.com/Tarovo/GitHub-Private-Access/blob/main/README.md
+#!openUrl = https://github.com/Tarovo/GitHub-Private-Access
 #!author = Peng-YM, Tarovo
-#!homepage = https://github.com/Tarovo/
+#!homepage = https://github.com/Tarovo
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
 #!input = github_username
 #!input = github_token
