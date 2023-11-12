@@ -9,17 +9,10 @@
 QX下载配置文件的请求不会触发脚本MITM重写。故无法使用。
 */
 
-// 如果不使用BoxJS配置，可以在这里修改
 let config = {
-  username: "Peng-YM", // 用户名
-  token: "Your token", // token
+  username: $persistentStore.read("github_username"), // 用户名
+  token: $persistentStore.read("github_token"), // token
 };
-
-// load user prefs from box
-const boxConfig = $persistentStore.read("github_private_repo");
-if (boxConfig) {
-  config = JSON.parse(boxConfig);
-}
 
 const username = $request.url.match(
   /https:\/\/(?:raw|gist)\.githubusercontent\.com\/([^\/]+)\//
