@@ -1,8 +1,12 @@
 #!name = GitHub Private Access
-#!desc = 访问 GitHub 私有仓库（Tarovo）
-#!author = Peng-YM
+#!desc = 允许访问 GitHub 私有仓库
+#!openUrl = https://github.com/Tarovo/GitHub-Private-Access/blob/main/README.md
+#!author = Peng-YM, Tarovo
+#!homepage = https://github.com/Tarovo/
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
-#!homepage = https://github.com/Tarovo/GitHub-Private-Access/blob/main/GitHub-Private-Access.plugin
+#!input = github_username
+#!input = github_token
+#!date = 2023-11-12 22:00:00
 
 [Script]
 http-request ^https?:\/\/(raw|gist)\.githubusercontent.com script-path=https://raw.githubusercontent.com/Tarovo/GitHub-Private-Access/main/github_private_repo.js
